@@ -5,7 +5,7 @@ class Calc{
 	
 	//Overloading
 	public int sum(int v1, int v2,  int v3) {
-		return v1 + v2 + v3;
+		return this.sum(v1, v2) + v3;
 	}
 }
 
@@ -17,7 +17,7 @@ class Calc3 extends Calc {
 	//Overriding
 	public int sum(int v1, int v2) {
 		System.out.println("Cal3!!");
-		return v1 + v2;
+		return super.sum(v1, v2);
 	}
 	
 	
